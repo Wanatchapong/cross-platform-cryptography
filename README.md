@@ -18,6 +18,10 @@ Symmetric encryption algorithm using [AES-256](https://cryptobook.nakov.com/symm
 
 - **Encrypted** (String): Concatenated (Salt + IV + CipherText) in Base64 format.
 
+<br>
+
+![Encryption](./aes256cbc.png)
+
 ## References
 
 - [OWASP MASTG iOS Cryptographic](https://mobile-security.gitbook.io/mobile-security-testing-guide/ios-testing-guide/0x06e-testing-cryptography)
