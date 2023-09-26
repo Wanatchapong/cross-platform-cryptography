@@ -20,7 +20,7 @@ Symmetric encryption algorithm using [AES-256](https://cryptobook.nakov.com/symm
 
 <br>
 
-![Encryption](./aes-256-cbc.png)
+![Encryption](./symmetric_encryption.png)
 
 ## References
 
