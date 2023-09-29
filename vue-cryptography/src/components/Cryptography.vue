@@ -53,6 +53,20 @@ function aes256CbcDecrypt(encrypted, password) {
 }
 
 function doEncryptDecrypt() {
+  const inputTextVal = (inputText.value || '').trim()
+  const inputPasswordVal = (inputPassword.value || '').trim()
+
+  if (!inputTextVal || !inputPasswordVal) {
+    // reset input
+    inputText.value = ''
+    inputPassword.value = ''
+    outputEncrypted.value = ''
+    outputDecrypted.value = ''
+
+    alert('please enter text and password!')
+    return
+  }
+
   outputEncrypted.value = aes256CbcEncrypt(inputText.value, inputPassword.value)
   outputDecrypted.value = aes256CbcDecrypt(outputEncrypted.value, inputPassword.value)
 }
